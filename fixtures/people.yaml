@@ -1,0 +1,67 @@
+---
+version: 1
+rwmutex: {}
+interactions:
+- request:
+    body: ""
+    form: {}
+    headers: {}
+    url: https://raw.githubusercontent.com/DoneSafe/code_test/master/people.json
+    method: GET
+  response:
+    body: |
+      {"people": [
+          {"name": "Ebony Boycott", "hourlyRate": 75.0030, "overtimeRate": 150.0000, "normalHours": 35.0, "overtimeHours": 7.3, "injuryDate": "2016/05/01" },
+          {"name": "Geoff Rainford-Brent", "hourlyRate": 30.1234, "overtimeRate": 60.3456, "normalHours": 25.0, "overtimeHours": 10.7, "injuryDate": "2016/08/04" },
+          {"name": "Meg Gillespie", "hourlyRate": 50.0000, "overtimeRate": 100.0000, "normalHours": 37.5, "overtimeHours": 0.0, "injuryDate": "2015/12/31" },
+          {"name": "Jason Lanning", "hourlyRate": 40.0055, "overtimeRate": 90.9876, "normalHours": 40.0, "overtimeHours": 12.4, "injuryDate": "2013/01/01" }
+      ]}
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=300
+      Connection:
+      - keep-alive
+      Content-Security-Policy:
+      - default-src 'none'; style-src 'unsafe-inline'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Fri, 29 Sep 2017 00:45:17 GMT
+      Etag:
+      - '"1b866ca2501762ea2a6a3505449d956851667635"'
+      Expires:
+      - Fri, 29 Sep 2017 00:50:17 GMT
+      Source-Age:
+      - "0"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Authorization,Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - "0"
+      X-Content-Type-Options:
+      - nosniff
+      X-Fastly-Request-Id:
+      - 627693b542850d8559921977880b55b9ea0197e1
+      X-Frame-Options:
+      - deny
+      X-Geo-Block-List:
+      - ""
+      X-Github-Request-Id:
+      - 1B54:1E8A9:22C2408:254D33B:59CD979C
+      X-Served-By:
+      - cache-syd1622-SYD
+      X-Timer:
+      - S1506645917.015754,VS0,VE239
+      X-Xss-Protection:
+      - 1; mode=block
+    status: 200 OK
+    code: 200

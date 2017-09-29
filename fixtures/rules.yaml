@@ -1,0 +1,68 @@
+---
+version: 1
+rwmutex: {}
+interactions:
+- request:
+    body: ""
+    form: {}
+    headers: {}
+    url: https://raw.githubusercontent.com/DoneSafe/code_test/master/rules.json
+    method: GET
+  response:
+    body: |
+      {"rules":[
+          {"applicableWeeks": "1-26", "percentagePayable": 90, "overtimeIncluded": true},
+          {"applicableWeeks": "26-52", "percentagePayable": 80, "overtimeIncluded": true},
+          {"applicableWeeks": "53-79", "percentagePayable": 70, "overtimeIncluded": true},
+          {"applicableWeeks": "80-104", "percentagePayable": 60, "overtimeIncluded": false},
+          {"applicableWeeks": "104+", "percentagePayable": 10, "overtimeIncluded": false}
+      ]}
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=300
+      Connection:
+      - keep-alive
+      Content-Security-Policy:
+      - default-src 'none'; style-src 'unsafe-inline'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Fri, 29 Sep 2017 00:33:24 GMT
+      Etag:
+      - '"54a6a14f1fb1749c87bde226fca9e12afa7abcd1"'
+      Expires:
+      - Fri, 29 Sep 2017 00:38:24 GMT
+      Source-Age:
+      - "0"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Authorization,Accept-Encoding
+      Via:
+      - 1.1 varnish
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - "0"
+      X-Content-Type-Options:
+      - nosniff
+      X-Fastly-Request-Id:
+      - ebe84e2c0f06c6b1e157df98feb3200766f39aa7
+      X-Frame-Options:
+      - deny
+      X-Geo-Block-List:
+      - ""
+      X-Github-Request-Id:
+      - E672:8829:3CF0B1D:41EDC58:59CD94D3
+      X-Served-By:
+      - cache-syd1623-SYD
+      X-Timer:
+      - S1506645204.008908,VS0,VE242
+      X-Xss-Protection:
+      - 1; mode=block
+    status: 200 OK
+    code: 200
